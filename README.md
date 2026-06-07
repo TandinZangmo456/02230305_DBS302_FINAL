@@ -1,5 +1,7 @@
 # XYZ Shop Backend System
 
+Video demo : https://drive.google.com/drive/folders/1FIt2mPyXKcBBxkZkStndiy8k-aKwY1Z9?usp=drive_link 
+
 ## Project Overview
 
 XYZ Shop is a complete backend system for an e-commerce platform built with Node.js, Express, MongoDB, and Redis. The project demonstrates real-world backend engineering practices including JWT authentication, Redis-based caching and cart management, MongoDB aggregation analytics, trending product tracking using Redis Sorted Sets, and unique visitor tracking using HyperLogLog.
