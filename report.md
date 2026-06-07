@@ -192,7 +192,9 @@ $ npm run dev
   Redis Connected  
   MongoDB Connected
 
-![][image1]
+![alt text](<ss/Screenshot from 2026-06-07 17-46-16.png>)
+
+![alt text](<ss/Screenshot from 2026-06-06 19-26-16.png>)
 
 *Figure 1 — Server startup: Docker containers running, MongoDB and Redis connected, all routes responding HTTP 200*
 
@@ -224,7 +226,7 @@ curl \-X POST http://localhost:5000/api/auth/register \\
 | :---- | :---- |
 | **token** | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9... (JWT) |
 
-![][image2]
+![alt text](<ss/Screenshot from 2026-06-07 17-50-00.png>)
 
 *Figure 2 — Registration returning hashed password and MongoDB \_id; login returning a signed JWT token*
 
@@ -274,7 +276,7 @@ Two products were added to the cart for user demo6. The cart was retrieved to co
 {"message":"Removed"}  
 {"6a1eb38fe3816ee8c81b0c1b":"5"}   (first item gone)
 
-![][image3]
+![alt text](<ss/Screenshot from 2026-06-06 19-26-53.png>)
 
 *Figure 3 — Cart operations: add, get, remove, and verify; Redis maintains hash state correctly across all operations*
 
@@ -332,7 +334,7 @@ curl http://localhost:5000/api/analytics/daily-revenue
 \[{"\_id":"2026-06-02","revenue":4000,"orders":4},  
  {"\_id":"2026-06-06","revenue":1000,"orders":1}\]
 
-![][image4]
+![alt text](<ss/Screenshot from 2026-06-06 19-27-18.png>)
 
 *Figure 4 — Trending, total sales, top products, and daily revenue; all aggregation pipelines returning correct live data*
 
@@ -356,7 +358,7 @@ HGETALL cart:demo6
   1\) "6a1eb38fe3816ee8c81b0c1b"  
   2\) "5"
 
-![][image5]
+![alt text](<ss/Screenshot from 2026-06-06 19-26-31.png>)
 
 *Figure 5 — Redis CLI: KEYS, TYPE checks and GET/HGETALL confirming string / hash / zset data types as designed*
 
