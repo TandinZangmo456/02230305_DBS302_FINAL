@@ -3,6 +3,8 @@ Project Report
 
 GitHub: [github.com/TandinZangmo456/02230305\_DBS302\_FINAL](https://github.com/TandinZangmo456/02230305_DBS302_FINAL)
 
+Video demo: https://drive.google.com/drive/folders/1FIt2mPyXKcBBxkZkStndiy8k-aKwY1Z9?usp=drive_link 
+
 # **1\. Introduction**
 
 This report documents the design and implementation of the XYZ Shop backend system. The system is a complete e-commerce backend built using Node.js and Express, integrated with MongoDB for persistent data storage and Redis for high-performance caching and in-memory operations.
